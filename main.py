@@ -60,7 +60,7 @@ is_go_on = True
 while is_go_on:
     new_df = DF()
     new_df.name = input("What is the Decision Factor's name? : \n")
-    new_df.score = int(input("What is the Score of the new decision factor ? : \n"))
+    new_df.score = float(input("What is the Score of the new decision factor ? : \n"))
     is_phenotype = input("Is phenotype Exists ? (yes/no) \n")
     if(is_phenotype == "yes"):
         new_df.ph_cognitive = lambda : print(". ph_cognitive")
